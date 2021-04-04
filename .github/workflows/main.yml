@@ -12,6 +12,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
-          heroku_api_key: ${{d35cebf9-c88b-4802-8d43-c4df819568de}}
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "real-chat-node-pancea" #Must be unique in Heroku
           heroku_email: "manavmodi0004@gmail.com"
